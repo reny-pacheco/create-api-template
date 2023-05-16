@@ -1,0 +1,45 @@
+{
+  "name": "create-api-template",
+  "version": "1.0.7",
+  "description": "Minimal boilerplate for creating fastify and express api",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "create-api-template": "./dist/index.js"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && npm start",
+    "start": "node ./dist/index.js",
+    "build": "rm -rf ./dist && tsc && cp -r ./src/templates ./dist",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "express",
+    "fastify",
+    "api",
+    "nodejs",
+    "boilerplate"
+  ],
+  "author": "Reny Pacheco",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "execa": "^6.1.0",
+    "fs-extra": "^11.1.0",
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2"
+  }
+}
