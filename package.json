@@ -26,6 +26,10 @@
     "boilerplate"
   ],
   "author": "Reny Pacheco",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reny-pacheco/create-api-template"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.20.12",
