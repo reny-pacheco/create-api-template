@@ -28,7 +28,7 @@ create-api-template [project-name] [project-type]
 
 **Project Type**
 
-- `--expres`: Express Api
+- `--express`: Express Api
 - `--fastify`: Fastify
 
 **Example**
